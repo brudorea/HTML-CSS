@@ -1,0 +1,142 @@
+@charset "Utf-8";
+
+/*Fontes externas*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Váriaveis CSS*/
+:root{
+    --cor1: #e8e8e8;
+    --cor2: #a1a1a1;
+    --cor3: #434343;
+    --cor4: #173261;
+    --cor5: #FFF;
+    --cor6: #000;
+
+
+    --titulo: 'Open Sans', sans-serif;
+    --texto:  'Sour Gummy', sans-serif;
+}
+
+/*Reset CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #6a6add;
+}
+/*layout*/
+.container{
+    margin: 0 auto;
+    background: #09abeb;
+}
+#topo{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    background: #fd7c03;
+
+}
+
+/*SMARTPHONE PORTRAIT*/
+/*Cabeçalho*/
+header{
+    height: 60px;
+}
+#check{ 
+    display: none;
+}
+label{
+    font-size: 3em;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+}
+nav ul{
+    list-style: none;
+    background: #8c67f3;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.50s;
+}
+nav ul li{
+    padding: 20px;
+    border-bottom: #000 1px solid;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fdcf03;
+    font-family: var(--cor6);
+    font-style: 1.5em;
+}
+#check:checked ~ ul{
+    right: 0;
+}
+
+/*SMARTPHONE LANDSCAPE*/
+@media (min-width:576px) {
+    body{
+        background: #d83a54;
+
+    }
+    .container{
+        max-width: 540px;
+    }
+}
+
+/*TABLET PORTRAIT*/
+@media (min-width:768px) {
+    body{
+        background: #6f44e4;
+
+    }
+    .container{ 
+        max-width: 720px;
+    }
+}
+
+/*TABLET LANDSCAPE*/
+@media (min-width:992px) {
+    body{
+        background: #61b909;
+
+    }
+    .container{
+        max-width: 960px;
+    }
+}
+
+/*PC*/
+@media (min-width:1200px) {
+    body{
+        background: #09abeb;
+
+    }
+    .container{
+        max-width: 1140px;
+    }
+}
+
+/*Cabeçalho*/
+header{
+    height: 125px;
+}
+.logo img{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+
