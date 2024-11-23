@@ -30,21 +30,31 @@
 body{
     background: #6a6add;
 }
-/*layout*/
+/*Layout*/
 .container{
     margin: 0 auto;
-    background: #09abeb;
+    /*background: #09abeb;*/
 }
 #topo{
     position: fixed;
     right: 10px;
     bottom: 10px;
 }
+.botao{
+    text-decoration: none;
+    color: var(--cor3);
+    font-size: 1.3em;
+    font-weight: 700;
+    background: #f9fd03;
+    border: 1px solid var(--cor6);
+    border-radius: 25px;
+    padding: 10px 40px;
+}
 
 .flex{
     display: flex;
     justify-content: space-between;
-    background: #fd7c03;
+    /*background: #fd7c03;*/
 
 }
 
@@ -64,7 +74,7 @@ label{
 }
 nav ul{
     list-style: none;
-    background: #8c67f3;
+    /*background: #8c67f3;*/
     height: 100vh;
     position: fixed;
     top: 60px;
@@ -78,7 +88,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #fdcf03;
+    color: #fd0303;
     font-family: var(--cor6);
     font-style: 1.5em;
 }
@@ -86,57 +96,125 @@ nav ul li a{
     right: 0;
 }
 
+/*DESTAQUE*/
+main{
+    height: 75vh;
+    background: url(img/banner_front.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--titulo)
+}
+main h1{
+    font-size: 3em;
+}
+main h2{
+    font-size: 1.5em;
+    margin: 20px 0px 50px 0px;
+}
+
 /*SMARTPHONE LANDSCAPE*/
 @media (min-width:576px) {
-    body{
+    /*body{
         background: #d83a54;
-
-    }
+        
+    }*/
     .container{
         max-width: 540px;
     }
+
+    label{ 
+        right: 60px;
+    }
+    
+    /*DESTAQUE*/
+    main h1, main h2{
+        text-shadow: #fdcf03 0.2em 0.2em 0.2em; 
+    
+    } 
 }
 
 /*TABLET PORTRAIT*/
 @media (min-width:768px) {
-    body{
+    /*body{
         background: #6f44e4;
 
-    }
+    }*/
     .container{ 
         max-width: 720px;
+    }
+    label{
+        right: 35px;
+    }
+    /*DESTAQUE*/
+    main{
+        height: 45vh;
+    }
+    main h1{
+        font-size: 5em;
+    }
+    main h2{
+        font-size: 2em;
     }
 }
 
 /*TABLET LANDSCAPE*/
 @media (min-width:992px) {
-    body{
+    /*body{
         background: #61b909;
 
-    }
+    }*/
     .container{
         max-width: 960px;
+    }
+    /*DESTAQUE*/
+    main{
+        height: 70vh;
     }
 }
 
 /*PC*/
 @media (min-width:1200px) {
-    body{
+    /*body{
         background: #09abeb;
 
-    }
+    }*/
     .container{
         max-width: 1140px;
     }
 }
 
-/*Cabeçalho*/
-header{
-    height: 125px;
-}
-.logo img{
-    margin-top: 30px;
-    margin-left: 30px;
-}
+ /*Cabeçalho*/
+    header{
+        height: 125px;
+    }
+    .logo img{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    label{
+        display: none;
+    }
+    nav ul{
+        position: static;
+        height: auto;
+        background: transparent;
+        margin-top: 50px;
+    }
+    nav ul li{
+        float: left;
+        border: 0;
+    }
+    nav ul li a{
+        color: yellow;
+    }
+    nav ul li a:hover{ 
+        color: red;
+    }
+
 
 
