@@ -57,6 +57,10 @@ body{
     /*background: #fd7c03;*/
 
 }
+.flex2{
+    display: flex;
+    align-items: center;
+}
 
 /*SMARTPHONE PORTRAIT*/
 /*Cabeçalho*/
@@ -117,6 +121,37 @@ main h2{
     margin: 20px 0px 50px 0px;
 }
 
+/*SOBRE*/
+#sobre{ 
+    background: url(img/background5.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0px;
+}
+.destaque_sobre{
+    display: none;
+}
+.texto_sobre{
+    color: var(--cor6);
+    padding: 0px 10px;
+    font-family: var(--texto);
+}
+.texto_sobre h2{
+    margin-bottom: 10px;
+    font-family: var(--titulo);
+    font-size: 2em;
+}
+.texto_sobre p{
+    font-size: 1.4em;
+}
+.topico_sobre{
+    margin-top: 20px;
+}
+.topico_sobre img{
+    margin-right: 10px;
+}
+
+
 /*SMARTPHONE LANDSCAPE*/
 @media (min-width:576px) {
     /*body{
@@ -160,6 +195,14 @@ main h2{
     main h2{
         font-size: 2em;
     }
+    /*SOBRE*/
+    .texto_sobre h2{
+        font-size: 2.8em;
+    
+    }
+    .texto_sobre p{
+        font-size: 1.8em;
+    }
 }
 
 /*TABLET LANDSCAPE*/
@@ -186,9 +229,8 @@ main h2{
     .container{
         max-width: 1140px;
     }
-}
 
- /*Cabeçalho*/
+    /*Cabeçalho*/
     header{
         height: 125px;
     }
@@ -216,5 +258,21 @@ main h2{
         color: red;
     }
 
+    /*SOBRE*/
+    .destaque_sobre{
+        display: inline;
+    }
+    .destaque_sobre img{
+        border-radius: 50%;
+        margin: 50px;
+    }
+    #sobre{
+        background-attachment: fixed; /*Efeito Parallax*/
+    }
+}
+
+ 
+
+    
 
 
