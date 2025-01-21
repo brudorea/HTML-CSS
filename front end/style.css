@@ -67,6 +67,36 @@ body{
     flex-direction: column;
 }
 
+.card{
+    margin-top: 25px;
+    width: 338px;
+    height: 535px;
+    background: var(--cor2);
+    border: 1px solid var(--cor6);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card img{
+    border-radius: 25px 25px 0px 0px;
+}
+.card h3{
+    margin-top: 15px;
+    font-family: var(--titulo);
+    font-size: 1.3em;
+}
+.card p{
+    text-align: left;
+    padding: 10px 30px 40px 30px;
+    font-family: var(--texto);
+    font-size: 1.2em;
+}
+.card a{
+    padding: 10px 100px;
+    font-family: var(--texto);
+    border: 0;
+}
+
 
 /*SMARTPHONE PORTRAIT*/
 /*Cabeçalho*/
@@ -174,6 +204,47 @@ main h2{
 .video iframe{
     width: 340px;
     height: 190px;
+}
+
+/*Seção wireframe*/
+#wireframe{
+    padding: 50px 0px;
+    background: url(img/background5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.qrcode{
+    display: none;
+}
+
+.textowire span{
+    display: none;
+}
+
+.textowire{
+    padding: 0px 10px;
+    color: var(--cor6);
+}
+
+.textowire h2{
+    margin-bottom: 10px;
+    font-family: var(--titulo);
+}
+
+.textowire p{
+    margin-bottom: 40px;
+    font-family: var(--texto);
+}
+
+/*CARTÕES*/
+#conteudo{
+    padding: 50px 0px;
+}
+#conteudo h2{
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 2em;
+    font-family: var(--titulo);
 }
 
 /*SMARTPHONE LANDSCAPE*/
@@ -304,6 +375,21 @@ main h2{
     .flex3{
         flex-direction: row;
         align-items: center;
+    }
+
+    /*Seção Wireframe*/
+    #wireframe{
+        background-attachment: fixed;
+    }
+
+    #wireframe span{
+        display: inline;
+        color: var(--cor4);
+        font-weight: 700;
+    }
+    .qrcode{
+        display: inline;
+        
     }
 }
 
