@@ -148,7 +148,7 @@ nav ul li a{
     text-decoration: none;
     color: #fd0303;
     font-family: var(--texto);
-    font-style: var(--titulo);
+    font-size: 1.2em;
 }
 #check:checked ~ ul{
     right: 0;
