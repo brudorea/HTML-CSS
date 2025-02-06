@@ -15,49 +15,204 @@
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <a class="navbar-brand" href="#"><img src="img/clubs.png" alt="Logo controle de video"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
-                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-      
-        
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Ação</a>
-                <a class="dropdown-item" href="#">Outra ação</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Algo mais aqui</a>
+  <div class="container-fluid">
+      <div class="bg-img">
+          <header class="d-flex flex-column align-items-center">
+              <div class="bg-dark container-fluid d-flex justify-content-center">
+                  <img class="logo img-fluid" src="img/clubs.png" alt="Clubes de Futebol">
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Desativado</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-          </form>
-        </div>
-      </nav>
+
+              <nav class="navbar navbar-expand-lg navbar-light bg-roxo-blur container-fluid">
+
+                  <a class="navbar-brand" href="#">
+                      <img src="img/orlando-logo.png" alt="">
+                  </a>
+
+                  <button class="navbar-toggler" type="button" data-toggle="collapse"
+                      data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado"
+                      aria-expanded="false" aria-label="Alterna navegação">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+
+
+                  <div class="collapse navbar-collapse justify-content-end mx-4" id="conteudoNavbarSuportado">
+                      <ul class="nav justify-content-end">
+                          <li class="nav-item">
+                              <a class="nav-link active text-light mx-2" href="#">Tickets</a>
+                          </li>
+
+                          <li class="nav-item">
+                              <a class="nav-link active text-light mx-2" href="#">News</a>
+                          </li>
+
+                          <li class="nav-item">
+                              <a class="nav-link active text-light mr-4 " href="#">Schedule</a>
+                          </li>
+                      </ul>
+
+                      <form class="form-inline">
+                          <div class="input-group bg-dark">
+                              <input type="search" class="form-control input-pesquisa" placeholder="Search..."
+                                  aria-label="Search">
+                              <div class="input-group-prepend">
+                                  
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </nav>
+          </header>
+
+          <main class="mt-10">
+              <div class="jumbotron-fluid">
+                  <div class="container">
+                      <h1 class="display-2 text-light text-shadow">Orlando City</h1>
+                      <h2 class="text-light">Orlando City Soccer Club</h2>
+                  </div>
+              </div>
+          </main>
+      </div>
+
+      <section class="d-flex flex-column align-items-center my-5">
+          <div class="d-flex flex-column align-items-center text-center mb-5">
+              <h1 class="display-4 font-weight-light text-roxo">LATEST NEWS</h1>
+              <hr class="border-amarela">
+          </div>
+
+          <div class="card-deck max-width d-flex flex-wrap">
+              <div class="card border-0 min-width">
+                  <img class="card-img-top" src="img/noticia-thumb.jpg" alt="Imagem de capa do card">
+                  <div class="card-body ">
+                      <h5 class="card-title text-roxo">Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC.
+                      </h5>
+                      <p class="card-text text-muted">December 21, 2015</p>
+                  </div>
+              </div>
+
+              <div class="card border-0 min-width">
+                  <img class="card-img-top" src="img/noticia-thumb.jpg" alt="Imagem de capa do card">
+                  <div class="card-body">
+                      <h5 class="card-title text-roxo">Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC.
+                      </h5>
+                      <p class="card-text text-muted">December 21, 2015</p>
+                  </div>
+              </div>
+
+              <div class="card border-0 min-width">
+                  <img class="card-img-top" src="img/noticia-thumb.jpg" alt="Imagem de capa do card">
+                  <div class="card-body">
+                      <h5 class="card-title text-roxo">Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC.
+                      </h5>
+                      <p class="card-text text-muted">December 21, 2015</p>
+                  </div>
+              </div>
+
+              <div class="card border-0 min-width">
+                  <img class="card-img-top" src="img/noticia-thumb.jpg" alt="Imagem de capa do card">
+                  <div class="card-body">
+                      <h5 class="card-title text-roxo">Orlando City Acquires Goalkeeper Joe Bendik from Toronto FC.
+                      </h5>
+                      <p class="card-text text-muted">December 21, 2015</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="bg-roxo py-5 my-5">
+          <div class="row">
+              <div class="col-md-4 d-flex flex-column align-items-center text-center">
+                  <h1 class="display-4 font-weight-light text-amarelo">61348</h1>
+                  <p class="font-weight-light text-light font-size-1 mt-none">STADIUM CAPACITY</p>
+              </div>
+
+              <div class="col-md-4 d-flex flex-column align-items-center text-center">
+                  <h1 class="display-4 font-weight-light text-amarelo">2010</h1>
+                  <p class="font-weight-light text-light font-size-1 mt-none">FOUNDED</p>
+              </div>
+
+              <div class="col-md-4 d-flex flex-column align-items-center text-center">
+                  <h1 class="display-4 font-weight-light text-amarelo">7th</h1>
+                  <p class="font-weight-light text-light font-size-1 mt-none">EASTERN CONFERENCE</p>
+              </div>
+          </div>
+      </section>
+
+      <section class="py-5 mb-5">
+          <div class="d-flex flex-column align-items-center text-center mb-5">
+              <h1 class="display-4 font-weight-light text-roxo">American club number one in Brazil</h1>
+              <hr class="border-amarela">
+          </div>
+
+          <p class="text-center mb-5">Adipisci velit, sed quia non numquam eius modi tempora incidunt ut
+              labore et
+              dolore magnam aliquam quaerat volup tatem. Uteni ad minima veniam, quis nostrum sed quia non numquam
+              eius modi tempora incidunt ut. quia non numquam eius numquam eius modi temp modi tempora incidunt ut
+              labore et dolore m</p>
+          <div class="d-flex align-items-center justify-content-center">
+              <a class="btn btn-roxo py-2 px-5 mx-4" href="#" role="button">Shop</a>
+              <a class="btn btn-amarelo py-2 px-5 mx-4" href="#" role="button">Register</a>
+          </div>
+      </section>
+
+      <footer class="footer d-flex flex-wrap">
+          <div>
+              <img class="logo-footer ml-5" src="img/orlando-logo.png" alt="Logo Orlando City">
+          </div>
+          <div class="container max-width">
+              <div class="row">
+                  <!-- Popular Posts -->
+                  <div class="col-md-4">
+                      <h5 class="footer-title font-weight-normal text-light">Popular Posts</h5>
+                      <hr class="linha-footer">
+                      <ul class="list-unstyled">
+                          <li><a class="text-muted" href="#">Neque porro quisquam est, quister. <br> <small class="text-amarelo">January 01, 2016</small></a>
+                          </li>
+                          <li><a class="text-muted" href="#">Neque porro quisquam est, quister. <br> <small class="text-amarelo">January 01, 2016</small></a>
+                          </li>
+                      </ul>
+                  </div>
+
+                  <!-- Links -->
+                  <div class="col-md-4">
+                      <h5 class="footer-title font-weight-normal text-light">Links</h5>
+                      <hr class="linha-footer">
+                      <ul class="list-unstyled">
+                          <li><a class="text-light" href="#">> Tickets</a></li>
+                          <li><a class="text-light" href="#">> News</a></li>
+                          <li><a class="text-light" href="#">> Schedule</a></li>
+                      </ul>
+                  </div>
+
+                  <!-- Get in Touch -->
+                  <div class="col-md-4">
+                      <h5 class="footer-title font-weight-normal text-light">Get in Touch</h5>
+                      <hr class="linha-footer">
+                      <p class="text-muted">618 E. South Street, Suite 510 <br> Orlando, FL 32801</p>
+                      <p class="text-muted">1.855.ORL.CITY</p>
+                      <div class="social-icons">
+                          <a href="#"><i class="fi fi-brands-facebook"></i></a>
+                          <a href="#"><i class="fi fi-brands-twitter"></i></a>
+                          <a href="#"><i class="fi fi-brands-instagram"></i></a>
+                          <a href=""><i class="fi fi-brands-pinterest"></i></a>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Copyright -->
+
+          </div>
+
+      </footer>
+      <div class="pt-3 pb-2 d-flex justify-content-around copyright">
+          <p class="text-muted">Copyright © Orlando City Soccer 2016. All rights reserved.</p>
+          <a class="text-roxo" href="#"><p>Created by HCODE in Udemy</p></a>
+      </div>
+  </div>
+  <!--Icone de lupa feito por: Ayub Irawan-->
+
+  <script src="scripts/jquery-3.3.1.slim.min.js"></script>
+  <script src="scripts/popper.min.js"></script>
+  <script src="bootstrap-4.1.3/js/bootstrap.min.js"></script>
 </body>
-     
- 
 
-           
-
-                   
-                    
-            
+</html>
